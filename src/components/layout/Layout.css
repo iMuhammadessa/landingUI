@@ -1,0 +1,110 @@
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main .left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+.main .textCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textCenter h1 {
+  font-size: 90px;
+  font-weight: 900;
+}
+
+.textCenter p {
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.textCenter a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.right {
+  width: 60%;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+.rightTop {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: rgb(112, 112, 242);
+}
+
+.rightTopLeft {
+  width: 55%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1540331547168-8b63109225b7?q=80&w=1919&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+.rightTopRight {
+  width: 45%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1560607162-26b0344e6943?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+.rightBottom {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://images.unsplash.com/photo-1560433956-b2847671bb86?q=80&w=1903&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .main .textCenter {
+    margin-top: 20px;
+  }
+
+  .main .left {
+    width: 100%;
+  }
+
+  .main .right {
+    margin-top: 50px;
+  }
+
+  .main .right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main .textCenter {
+    margin-top: 100px;
+  }
+
+  .main .right {
+    margin-top: 150px;
+  }
+}
